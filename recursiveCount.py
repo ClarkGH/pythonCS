@@ -1,9 +1,9 @@
 numberList = [1,2,3,4,5]
 
-def recursiveSum(numList):
+def recursiveCount(numList):
 	if not numList:
 		return 0
 	else:
-		return 1 + recursiveSum(numList[1::2]) + recursiveSum(numList[2::2])
+		return 1 + recursiveCount(numList[1::2]) + recursiveCount(numList[2::2])
 
-print recursiveSum( numberList )
+print recursiveCount( numberList )
